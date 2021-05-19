@@ -11,6 +11,7 @@ import History from "../../pages/History/index"
 import ReleasedApps from "../../pages/ReleasedApps/index"
 import InDev from "../../pages/InDev/index"
 import Contact from "../../pages/Contact/index"
+import SwitchFramework from "../../pages/SwitchFramework/index"
 
 function NavTabs(props) {
     const { children, value, index, ...other } = props;
@@ -97,8 +98,8 @@ export default function ScrollableTabsButtonAuto() {
                 <Contact />
             </NavTabs>
             <NavTabs value={value} index={5}>
-                Item Six
-      </NavTabs>
+                <SwitchFramework />
+            </NavTabs>
         </div>
     );
 }
