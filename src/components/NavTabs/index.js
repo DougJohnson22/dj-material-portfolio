@@ -7,6 +7,9 @@ import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import Splash from "../../pages/Splash/index"
+import History from "../../pages/History/index"
+import ReleasedApps from "../../pages/ReleasedApps/index"
+import InDev from "../../pages/InDev/index"
 
 function NavTabs(props) {
     const { children, value, index, ...other } = props;
@@ -70,25 +73,24 @@ export default function ScrollableTabsButtonAuto() {
                     aria-label="scrollable auto tabs example"
                 >
                     <Tab label="About" {...a11yProps(0)} />
-                    <Tab label="Item Two" {...a11yProps(1)} />
-                    <Tab label="Item Three" {...a11yProps(2)} />
-                    <Tab label="Item Four" {...a11yProps(3)} />
-                    <Tab label="Item Five" {...a11yProps(4)} />
-                    <Tab label="Item Six" {...a11yProps(5)} />
-                    <Tab label="Item Seven" {...a11yProps(6)} />
+                    <Tab label="History" {...a11yProps(1)} />
+                    <Tab label="Released Apps" {...a11yProps(2)} />
+                    <Tab label="In Development" {...a11yProps(3)} />
+                    <Tab label="Contact" {...a11yProps(4)} />
+                    <Tab label="Switch Framework" {...a11yProps(5)} />
                 </Tabs>
             </AppBar>
             <NavTabs value={value} index={0}>
                 <Splash />
-      </NavTabs>
+            </NavTabs>
             <NavTabs value={value} index={1}>
-                Item Two
-      </NavTabs>
+                <History />
+            </NavTabs>
             <NavTabs value={value} index={2}>
-                Item Three
-      </NavTabs>
+                <ReleasedApps />
+            </NavTabs>
             <NavTabs value={value} index={3}>
-                Item Four
+                <InDev />
       </NavTabs>
             <NavTabs value={value} index={4}>
                 Item Five
