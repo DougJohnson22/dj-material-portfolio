@@ -14,7 +14,6 @@ import { red } from '@material-ui/core/colors';
 import LinkIcon from '@material-ui/icons/Link';
 import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import MoreVertIcon from '@material-ui/icons/MoreVert';
 
 const useStyles = makeStyles((theme) => ({
     root: {
