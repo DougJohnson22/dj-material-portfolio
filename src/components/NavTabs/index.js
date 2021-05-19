@@ -10,6 +10,7 @@ import Splash from "../../pages/Splash/index"
 import History from "../../pages/History/index"
 import ReleasedApps from "../../pages/ReleasedApps/index"
 import InDev from "../../pages/InDev/index"
+import Contact from "../../pages/Contact/index"
 
 function NavTabs(props) {
     const { children, value, index, ...other } = props;
@@ -91,15 +92,12 @@ export default function ScrollableTabsButtonAuto() {
             </NavTabs>
             <NavTabs value={value} index={3}>
                 <InDev />
-      </NavTabs>
+            </NavTabs>
             <NavTabs value={value} index={4}>
-                Item Five
-      </NavTabs>
+                <Contact />
+            </NavTabs>
             <NavTabs value={value} index={5}>
                 Item Six
-      </NavTabs>
-            <NavTabs value={value} index={6}>
-                Item Seven
       </NavTabs>
         </div>
     );
