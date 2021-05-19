@@ -4,7 +4,7 @@ import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
 import IconButton from '@material-ui/core/IconButton';
-import StarBorderIcon from '@material-ui/icons/StarBorder';
+import AdjustIcon from '@material-ui/icons/Adjust';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -35,8 +35,32 @@ const useStyles = makeStyles((theme) => ({
 const tileData = [
     {
         img: "https://i.postimg.cc/JnKMVgp0/git.jpg",
-        title: 'Music',
-        author: 'Douglas Johnson',
+        title: 'Musician',
+        featured: true,
+    },
+    {
+        img: "https://i.postimg.cc/bJkps56z/bread.jpg",
+        title: 'Bread Baker',
+        featured: false,
+    },
+    {
+        img: "https://i.postimg.cc/JzzrPPhq/wine.jpg",
+        title: 'Winemaker',
+        featured: false,
+    },
+    {
+        img: "https://i.postimg.cc/5tJZstpM/b3.jpg",
+        title: 'Beer Brewer',
+        featured: false,
+    },
+    {
+        img: "https://i.postimg.cc/jS2Tz283/adventure.jpg",
+        title: 'Adventurer',
+        featured: false,
+    },
+    {
+        img: "https://i.postimg.cc/Gm404N2Z/gm.jpg",
+        title: 'Professional Game Master',
         featured: true,
     },
 ];
@@ -55,7 +79,7 @@ export default function HistoryGrid() {
                             titlePosition="top"
                             actionIcon={
                                 <IconButton aria-label={`star ${tile.title}`} className={classes.icon}>
-                                    <StarBorderIcon />
+                                    <AdjustIcon />
                                 </IconButton>
                             }
                             actionPosition="left"
