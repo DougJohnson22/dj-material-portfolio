@@ -39,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-export default function AppCard(props) {
+export default function AppCard() {
     const classes = useStyles();
     const [expanded, setExpanded] = React.useState(false);
 

@@ -10,7 +10,7 @@ import Splash from "../../pages/Splash/index"
 import History from "../../pages/History/index"
 import ReleasedApps from "../../pages/ReleasedApps/index"
 import InDev from "../../pages/InDev/index"
-import Contact from "../../pages/Contact/index"
+import ContactPage from "../../pages/Contact/index"
 import SwitchFramework from "../../pages/SwitchFramework/index"
 
 function NavTabs(props) {
@@ -95,7 +95,7 @@ export default function ScrollableTabsButtonAuto() {
                 <InDev />
             </NavTabs>
             <NavTabs value={value} index={4}>
-                <Contact />
+                <ContactPage />
             </NavTabs>
             <NavTabs value={value} index={5}>
                 <SwitchFramework />
