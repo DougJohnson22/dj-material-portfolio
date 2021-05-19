@@ -87,9 +87,9 @@ export default function AppCard(props) {
             </CardActions>
             <Collapse in={expanded} timeout="auto" unmountOnExit>
                 <CardContent>
-                    <Typography paragraph>Contribution:</Typography>
+                    <Typography paragraph>{props.expandhead}</Typography>
                     <Typography paragraph>
-                        {props.cont}
+                        {props.expandpara}
                     </Typography>
                 </CardContent>
             </Collapse>
