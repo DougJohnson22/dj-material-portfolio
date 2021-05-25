@@ -78,7 +78,7 @@ export default function HistoryGrid() {
                             title={tile.title}
                             titlePosition="top"
                             actionIcon={
-                                <IconButton aria-label={`star ${tile.title}`} className={classes.icon}>
+                                <IconButton aria-label={`open ${tile.title}`} className={classes.icon}>
                                     <AdjustIcon />
                                 </IconButton>
                             }
