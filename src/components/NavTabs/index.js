@@ -79,7 +79,6 @@ export default function ScrollableTabsButtonAuto() {
                     <Tab label="Released Apps" {...a11yProps(2)} />
                     <Tab label="In Development" {...a11yProps(3)} />
                     <Tab label="Contact" {...a11yProps(4)} />
-                    <Tab label="Switch Framework" {...a11yProps(5)} />
                 </Tabs>
             </AppBar>
             <NavTabs value={value} index={0}>
@@ -96,9 +95,6 @@ export default function ScrollableTabsButtonAuto() {
             </NavTabs>
             <NavTabs value={value} index={4}>
                 <ContactPage />
-            </NavTabs>
-            <NavTabs value={value} index={5}>
-                <SwitchFramework />
             </NavTabs>
         </div>
     );

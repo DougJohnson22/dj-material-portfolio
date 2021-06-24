@@ -1,6 +1,5 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 
@@ -18,6 +17,7 @@ const useStyles = makeStyles((theme) => ({
         padding: theme.spacing(1),
         width: "80%",
         justifyContent: "center",
+        textAlign: 'center'
     }
 }));
 
@@ -31,11 +31,25 @@ export default function Splash() {
                         <img className={classes.content} src="https://images2.imgbox.com/79/8d/tQzEYisj_o.png" alt="Douglas Johnson banner" />
                     </Paper>
                 </Grid>
+                <Grid item xs={12} className={classes.content}>
+                    
+                        Intro Paragraph
+                    
+                </Grid>
                 <Grid item xs={6}>
                     <Paper className={classes.paper}>About Me</Paper>
                 </Grid>
                 <Grid item xs={6}>
                     <Paper className={classes.paper}>Tech Stack</Paper>
+                </Grid>
+                <Grid item xs={6}>
+                    <Paper className={classes.paper}>History</Paper>
+                </Grid>
+                <Grid item xs={6}>
+                    <Paper className={classes.paper}>Released Apps</Paper>
+                </Grid>
+                <Grid item xs={12}>
+                    <Paper className={classes.paper}>Continued Education</Paper>
                 </Grid>
             </Grid>
         </div>

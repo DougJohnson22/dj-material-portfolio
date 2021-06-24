@@ -1,10 +1,9 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
-import NavTabs from "./components/NavTabs/index"
-
+import Splash from './pages/Splash';
 function App() {
   return (
-<NavTabs/>     
+<Splash/>     
   );
 }
 
