@@ -62,18 +62,17 @@ export default function AppCard(props) {
                 image={props.img}
                 title={props.imgtitle}
             />
-            <IconButton aria-label="share">
-                <ShareIcon />
-            </IconButton>
             <CardContent>
                 <Typography variant="body2" color="textSecondary" component="p">
                     {props.summary}
                 </Typography>
             </CardContent>
             <CardActions disableSpacing>
-                <IconButton aria-label="go to app">
+               <a href={props.link} target='_blank'> 
+               <IconButton aria-label="go to app">
                     <LinkIcon />
                 </IconButton>
+                   </a> 
                 <IconButton
                     className={clsx(classes.expand, {
                         [classes.expandOpen]: expanded,
@@ -88,9 +87,9 @@ export default function AppCard(props) {
             <Collapse in={expanded} timeout="auto" unmountOnExit>
                 <CardContent>
                     <Typography paragraph>{props.expandhead}</Typography>
-                    <Typography paragraph>
-                        {props.expandpara}
-                    </Typography>
+                    <p>
+                        {props.expandpara.map(tech=><p>{tech}</p>)}
+                    </p>
                 </CardContent>
             </Collapse>
         </Card>
