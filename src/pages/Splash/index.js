@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
         flexGrow: 1,
     },
     paper: {
-        padding: theme.spacing(1),
+        padding: theme.spacing(2),
         textAlign: 'center',
         color: theme.palette.text.primary,
         background: "#FFFFF0",
@@ -22,14 +22,15 @@ const useStyles = makeStyles((theme) => ({
             background: "#ffffd6",
         },
         fontFamily: 'Hammersmith One',
+        maxWidth: '100%'
     },
     content: {
-        padding: theme.spacing(1),
+        padding: 0,
         width: "100%",
         justifyContent: "center",
         textAlign: 'center',
         fontFamily: 'Playfair Display',
-        '& .MuiCardContent-root > p:first-child': { fontFamily: 'Hammersmith One'}
+        '& .MuiCardContent-root > p:first-child': { fontFamily: 'Hammersmith One' }
     }
 }));
 
@@ -101,7 +102,19 @@ export default function Splash() {
                     </Accordion>
                 </Grid>
                 <Grid item md={6}>
-                    <Paper className={classes.paper}>History</Paper>
+                    <Accordion>
+                        <AccordionSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel1a-content"
+                            id="panel1a-header"
+                            className={classes.paper}
+                        >
+                            History
+                        </AccordionSummary>
+                        <AccordionDetails className={classes.content}>
+                            I am a UW Certified Full Stack Web Developer. I bring an adaptive problem solving mindset to every project I contribute to and am of the "rising tides" mentality when it comes to working with others at every level of my career.
+                        </AccordionDetails>
+                    </Accordion>
                 </Grid>
                 <Grid item md={6}>
                     <Accordion>
@@ -114,22 +127,82 @@ export default function Splash() {
                             Released Apps
                         </AccordionSummary>
                         <AccordionDetails className={classes.content}>
-                            <AppCard
-                                sg='G'
-                                title='DunGen'
-                                subheader='Dungen Building should be easy.'
-                                img='https://images2.imgbox.com/17/7d/4IMeXTWp_o.jpg'
-                                imgtitle="DunGen Dragon"
-                                summary='BootCamp Project: We created a drag and drop RPG map creator focused on ease of use.'
-                                expandhead='Primary Tech Stack'
-                                expandpara={['Framer-motion', 'react-grid-layout', 'JSON WebTokens', 'MySQL/Sequelize', 'Material UI']}
-                                link= 'https://octowaggle.herokuapp.com/'
-                            />
+                            <Grid container spacing={2} justify='space-evenly'>
+
+                                <Grid item style={{margin: '1em'}}>
+                                    <AppCard
+                                        sg='G'
+                                        title='DunGen'
+                                        subheader='Dungen Building should be easy.'
+                                        img='https://images2.imgbox.com/17/7d/4IMeXTWp_o.jpg'
+                                        imgtitle="DunGen Dragon"
+                                        summary='BootCamp Project: We created a drag and drop RPG map creator focused on ease of use.'
+                                        expandhead='Primary Tech Stack'
+                                        expandpara={['Framer-motion', 'react-grid-layout', 'JSON WebTokens', 'MySQL/Sequelize', 'Material UI']}
+                                        link='https://octowaggle.herokuapp.com/'
+                                    />
+                                </Grid>
+
+                                <Grid item style={{ margin: '1em' }}>
+                                    <AppCard
+                                        sg='G'
+                                        title='DunGen'
+                                        subheader='Dungen Building should be easy.'
+                                        img='https://images2.imgbox.com/17/7d/4IMeXTWp_o.jpg'
+                                        imgtitle="DunGen Dragon"
+                                        summary='BootCamp Project: We created a drag and drop RPG map creator focused on ease of use.'
+                                        expandhead='Primary Tech Stack'
+                                        expandpara={['Framer-motion', 'react-grid-layout', 'JSON WebTokens', 'MySQL/Sequelize', 'Material UI']}
+                                        link='https://octowaggle.herokuapp.com/'
+                                    />
+                                </Grid>
+
+                                <Grid item style={{ margin: '1em' }}>
+                                    <AppCard
+                                        sg='G'
+                                        title='DunGen'
+                                        subheader='Dungen Building should be easy.'
+                                        img='https://images2.imgbox.com/17/7d/4IMeXTWp_o.jpg'
+                                        imgtitle="DunGen Dragon"
+                                        summary='BootCamp Project: We created a drag and drop RPG map creator focused on ease of use.'
+                                        expandhead='Primary Tech Stack'
+                                        expandpara={['Framer-motion', 'react-grid-layout', 'JSON WebTokens', 'MySQL/Sequelize', 'Material UI']}
+                                        link='https://octowaggle.herokuapp.com/'
+                                    />
+                                </Grid>
+
+                                <Grid item style={{ margin: '1em' }}>
+                                    <AppCard
+                                        sg='G'
+                                        title='DunGen'
+                                        subheader='Dungen Building should be easy.'
+                                        img='https://images2.imgbox.com/17/7d/4IMeXTWp_o.jpg'
+                                        imgtitle="DunGen Dragon"
+                                        summary='BootCamp Project: We created a drag and drop RPG map creator focused on ease of use.'
+                                        expandhead='Primary Tech Stack'
+                                        expandpara={['Framer-motion', 'react-grid-layout', 'JSON WebTokens', 'MySQL/Sequelize', 'Material UI']}
+                                        link='https://octowaggle.herokuapp.com/'
+                                    />
+                                </Grid>
+
+                            </Grid>
                         </AccordionDetails>
                     </Accordion>
                 </Grid>
                 <Grid item md={12}>
-                    <Paper className={classes.paper}>Certifications</Paper>
+                    <Accordion>
+                        <AccordionSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel1a-content"
+                            id="panel1a-header"
+                            className={classes.paper}
+                        >
+                            Certifications
+                        </AccordionSummary>
+                        <AccordionDetails className={classes.content}>
+                            I am a UW Certified Full Stack Web Developer. I bring an adaptive problem solving mindset to every project I contribute to and am of the "rising tides" mentality when it comes to working with others at every level of my career.
+                        </AccordionDetails>
+                    </Accordion>
                 </Grid>
 
             </Grid>
