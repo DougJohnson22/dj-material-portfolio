@@ -28,14 +28,7 @@ export default function Splash() {
             <Grid container spacing={5}>
                 <Grid item xs={12}>
                     <Paper className={classes.paper}>
-                        <Typography className={classes.content} variant="h1" component="h2" gutterBottom>
-                            Douglas Johnson
-                        </Typography>
-                    </Paper>
-                </Grid>
-                <Grid item xs={12}>
-                    <Paper className={classes.paper}>
-                        <img className={classes.content} src="https://www.rewireme.com/wp-content/uploads/2015/05/052215_How-to-Be-Yourself3.jpg" alt="coding waterfall" />
+                        <img className={classes.content} src="https://images2.imgbox.com/79/8d/tQzEYisj_o.png" alt="Douglas Johnson banner" />
                     </Paper>
                 </Grid>
                 <Grid item xs={6}>
