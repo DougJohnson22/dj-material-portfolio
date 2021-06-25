@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
         textAlign: 'center',
         fontFamily: 'Playfair Display',
         '& .MuiCardContent-root > p:first-child': { fontFamily: 'Hammersmith One' },
-        '& .MuiTypography-body2': { fontFamily: 'Raleway'}
+        '& .MuiTypography-body2': { fontFamily: 'Raleway' }
     }
 }));
 
@@ -141,7 +141,7 @@ export default function Splash() {
                                         imgtitle="DunGen Dragon"
                                         summary={'My Tech Stack: JSON WebTokens + MySQL/Sequelize + Material UI + Node.js'}
                                         expandhead='Project Tech Stack'
-                                        expandpara={['Framer-motion', 'React-Grid-Layout', 'JSON WebTokens', 'MySQL + Sequelize', 'Heroku SQL', 'Material UI', 'Node.js' ]}
+                                        expandpara={['Framer-motion', 'React-Grid-Layout', 'JSON WebTokens', 'MySQL + Sequelize', 'Heroku SQL', 'Material UI', 'Node.js']}
                                         link='https://octowaggle.herokuapp.com/'
                                     />
                                 </Grid>
@@ -153,14 +153,28 @@ export default function Splash() {
                                         subheader='BootCamp Project: We created a pantry app to organize your home with customized locations.'
                                         img='https://images2.imgbox.com/df/ec/NTU2ZvEt_o.png'
                                         imgtitle="The Cado Family"
-                                        summary='My Tech Stack: Express + Handlebars + Session, MySQL + Sequelize, Heroku SQL'
+                                        summary='My Tech Stack: Express + Handlebars + Session, MySQL + Sequelize, Heroku SQL, Node.js'
                                         expandhead='Primary Tech Stack'
-                                        expandpara={['Bcrypt', 'Express + Handlebars + Session', 'MySQL + Sequelize', 'Heroku SQL','Day.js' ]}
+                                        expandpara={['Bcrypt', 'Express + Handlebars + Session', 'MySQL + Sequelize', 'Heroku SQL', 'Day.js', 'Node.js']}
                                         link='https://quiet-sands-24336.herokuapp.com/'
                                     />
                                 </Grid>
 
-                              
+                                <Grid item style={{ margin: '1em' }}>
+                                    <AppCard
+                                        sg='S'
+                                        title='Readme Generator'
+                                        subheader='BootCamp Assignment: Generate a Readme file through command line prompts.'
+                                        img='https://images2.imgbox.com/42/97/k8p0wc5U_o.png'
+                                        imgtitle="Console Example"
+                                        summary=''
+                                        expandhead='Primary Tech Stack'
+                                        expandpara={['Node.js']}
+                                        link='https://github.com/DougJohnson22/ReadMe-Gen'
+                                    />
+                                </Grid>
+
+
                             </Grid>
                         </AccordionDetails>
                     </Accordion>
