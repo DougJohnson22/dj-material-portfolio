@@ -24,13 +24,16 @@ const useStyles = makeStyles((theme) => ({
         fontFamily: 'Hammersmith One',
         maxWidth: '100%'
     },
+
+
     content: {
         padding: 0,
         width: "100%",
         justifyContent: "center",
         textAlign: 'center',
         fontFamily: 'Playfair Display',
-        '& .MuiCardContent-root > p:first-child': { fontFamily: 'Hammersmith One' }
+        '& .MuiCardContent-root > p:first-child': { fontFamily: 'Hammersmith One' },
+        '& .MuiTypography-body2': { fontFamily: 'Raleway'}
     }
 }));
 
@@ -129,16 +132,16 @@ export default function Splash() {
                         <AccordionDetails className={classes.content}>
                             <Grid container spacing={2} justify='space-evenly'>
 
-                                <Grid item style={{margin: '1em'}}>
+                                <Grid item style={{ margin: '1em' }}>
                                     <AppCard
                                         sg='G'
                                         title='DunGen'
-                                        subheader='Dungen Building should be easy.'
+                                        subheader='BootCamp Project: We created a drag and drop RPG map creator focused on ease of use.'
                                         img='https://images2.imgbox.com/17/7d/4IMeXTWp_o.jpg'
                                         imgtitle="DunGen Dragon"
-                                        summary='BootCamp Project: We created a drag and drop RPG map creator focused on ease of use.'
-                                        expandhead='Primary Tech Stack'
-                                        expandpara={['Framer-motion', 'react-grid-layout', 'JSON WebTokens', 'MySQL/Sequelize', 'Material UI']}
+                                        summary={'My Tech Stack: JSON WebTokens + MySQL/Sequelize + Material UI + Node.js'}
+                                        expandhead='Project Tech Stack'
+                                        expandpara={['Framer-motion', 'React-Grid-Layout', 'JSON WebTokens', 'MySQL + Sequelize', 'Heroku SQL', 'Material UI', 'Node.js' ]}
                                         link='https://octowaggle.herokuapp.com/'
                                     />
                                 </Grid>
@@ -146,45 +149,18 @@ export default function Splash() {
                                 <Grid item style={{ margin: '1em' }}>
                                     <AppCard
                                         sg='G'
-                                        title='DunGen'
-                                        subheader='Dungen Building should be easy.'
-                                        img='https://images2.imgbox.com/17/7d/4IMeXTWp_o.jpg'
-                                        imgtitle="DunGen Dragon"
-                                        summary='BootCamp Project: We created a drag and drop RPG map creator focused on ease of use.'
+                                        title='Despensa'
+                                        subheader='BootCamp Project: We created a pantry app to organize your home with customized locations.'
+                                        img='https://images2.imgbox.com/df/ec/NTU2ZvEt_o.png'
+                                        imgtitle="The Cado Family"
+                                        summary='My Tech Stack: Express + Handlebars + Session, MySQL + Sequelize, Heroku SQL'
                                         expandhead='Primary Tech Stack'
-                                        expandpara={['Framer-motion', 'react-grid-layout', 'JSON WebTokens', 'MySQL/Sequelize', 'Material UI']}
-                                        link='https://octowaggle.herokuapp.com/'
+                                        expandpara={['Bcrypt', 'Express + Handlebars + Session', 'MySQL + Sequelize', 'Heroku SQL','Day.js' ]}
+                                        link='https://quiet-sands-24336.herokuapp.com/'
                                     />
                                 </Grid>
 
-                                <Grid item style={{ margin: '1em' }}>
-                                    <AppCard
-                                        sg='G'
-                                        title='DunGen'
-                                        subheader='Dungen Building should be easy.'
-                                        img='https://images2.imgbox.com/17/7d/4IMeXTWp_o.jpg'
-                                        imgtitle="DunGen Dragon"
-                                        summary='BootCamp Project: We created a drag and drop RPG map creator focused on ease of use.'
-                                        expandhead='Primary Tech Stack'
-                                        expandpara={['Framer-motion', 'react-grid-layout', 'JSON WebTokens', 'MySQL/Sequelize', 'Material UI']}
-                                        link='https://octowaggle.herokuapp.com/'
-                                    />
-                                </Grid>
-
-                                <Grid item style={{ margin: '1em' }}>
-                                    <AppCard
-                                        sg='G'
-                                        title='DunGen'
-                                        subheader='Dungen Building should be easy.'
-                                        img='https://images2.imgbox.com/17/7d/4IMeXTWp_o.jpg'
-                                        imgtitle="DunGen Dragon"
-                                        summary='BootCamp Project: We created a drag and drop RPG map creator focused on ease of use.'
-                                        expandhead='Primary Tech Stack'
-                                        expandpara={['Framer-motion', 'react-grid-layout', 'JSON WebTokens', 'MySQL/Sequelize', 'Material UI']}
-                                        link='https://octowaggle.herokuapp.com/'
-                                    />
-                                </Grid>
-
+                              
                             </Grid>
                         </AccordionDetails>
                     </Accordion>

@@ -12,7 +12,6 @@ import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import { red } from '@material-ui/core/colors';
 import LinkIcon from '@material-ui/icons/Link';
-import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 const useStyles = makeStyles((theme) => ({
@@ -63,9 +62,9 @@ export default function AppCard(props) {
                 title={props.imgtitle}
             />
             <CardContent>
-                <Typography variant="body2" color="textSecondary" component="p">
+                <p>
                     {props.summary}
-                </Typography>
+                </p>
             </CardContent>
             <CardActions disableSpacing>
                <a href={props.link} target='_blank'> 
