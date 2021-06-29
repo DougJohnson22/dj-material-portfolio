@@ -232,6 +232,11 @@ export default function Splash() {
                     </Accordion>
                 </Grid>
             </Grid>
+
+
+            {/* Footer */}
+            
+
         </div>
     )
 }

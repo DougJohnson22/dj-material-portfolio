@@ -77,12 +77,12 @@ export default function HistoryGrid() {
                         <GridListTileBar
                             title={tile.title}
                             titlePosition="top"
-                            actionIcon={
-                                <IconButton aria-label={`open ${tile.title}`} className={classes.icon}>
-                                    <AdjustIcon />
-                                </IconButton>
-                            }
-                            actionPosition="left"
+                            // actionIcon={
+                            //     <IconButton aria-label={`open ${tile.title}`} className={classes.icon}>
+                            //         <AdjustIcon />
+                            //     </IconButton>
+                            // }
+                            // actionPosition="left"
                             className={classes.titleBar}
                         />
                     </GridListTile>
