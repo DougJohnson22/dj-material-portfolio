@@ -1,6 +1,5 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Accordion from '@material-ui/core/Accordion';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
@@ -8,6 +7,7 @@ import AccordionDetails from '@material-ui/core/AccordionDetails';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import AppCard from '../../components/AppCard/index'
 import CertCard from '../../components/CertCard/index'
+import History from '../../components/History/index'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -41,16 +41,24 @@ const useStyles = makeStyles((theme) => ({
 export default function Splash() {
     const classes = useStyles();
     return (
+
         <div className={classes.root}>
+
             <Grid container spacing={5}>
+
+                {/* Banner */}
                 <Grid item xs={12}>
                     <img className={classes.content} src="https://images2.imgbox.com/48/fa/2EsnyXw7_o.png" alt="Douglas Johnson banner" />
                 </Grid>
+
+                {/* Hook */}
                 <Grid item xs={12} className={classes.content}>
 
                     Greetings! I am a newly minted Full Stack Web Developer based in Olympia,WA with a background in the Fine Wine industry and have strong cognitive flexibility.
 
                 </Grid>
+
+                {/* About Me */}
                 <Grid item md={6}>
                     <Accordion>
                         <AccordionSummary
@@ -61,11 +69,23 @@ export default function Splash() {
                         >
                             About Me
                         </AccordionSummary>
-                        <AccordionDetails className={classes.content}>
-                            I am a UW Certified Full Stack Web Developer. I bring an adaptive problem solving to every project I contribute to and am of the "rising tides" mentality when it comes to working with others at every level of my career.
-                        </AccordionDetails>
+                        <Grid container>
+                            <AccordionDetails className={classes.content}>
+                                <Grid item md={6}>
+                                    <img src='https://thumbs2.imgbox.com/c7/05/ZC4z4R1K_t.jpg'></img>
+                                </Grid>
+
+                                <Grid item md={6} className={classes.content}>
+                                    I am a UW Certified Full Stack Web Developer. I bring an adaptive problem solving to every project I contribute to and am of the "rising tides" mentality when it comes to working with others at every level of my career.
+                                </Grid>
+
+                            </AccordionDetails>
+                        </Grid>
+
                     </Accordion>
                 </Grid>
+
+                {/* Tech Stack */}
                 <Grid item md={6}>
                     <Accordion>
                         <AccordionSummary
@@ -105,6 +125,8 @@ export default function Splash() {
                         </AccordionDetails>
                     </Accordion>
                 </Grid>
+
+                {/* History */}
                 <Grid item md={6}>
                     <Accordion>
                         <AccordionSummary
@@ -116,10 +138,12 @@ export default function Splash() {
                             History
                         </AccordionSummary>
                         <AccordionDetails className={classes.content}>
-                            I am a UW Certified Full Stack Web Developer. I bring my cognitive flexibility to every project I contribute to and am of the "rising tides" mentality when it comes to working with others at every level of my career.
+                            <History />
                         </AccordionDetails>
                     </Accordion>
                 </Grid>
+
+                {/* Certifications */}
                 <Grid item md={6}>
                     <Accordion>
                         <AccordionSummary
@@ -150,6 +174,7 @@ export default function Splash() {
                     </Accordion>
                 </Grid>
 
+                {/* BootCamp Apps */}
                 <Grid item md={12}>
                     <Accordion>
                         <AccordionSummary
