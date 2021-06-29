@@ -7,6 +7,7 @@ import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import AppCard from '../../components/AppCard/index'
+import CertCard from '../../components/CertCard/index'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -47,7 +48,7 @@ export default function Splash() {
                 </Grid>
                 <Grid item xs={12} className={classes.content}>
 
-                    Douglas Johnson is a newly minted Full Stack Web Developer with a background in the Fine Wine industry.
+                    Greetings! I am a newly minted Full Stack Web Developer based in Olympia,WA with a background in the Fine Wine industry and have strong cognitive flexibility.
 
                 </Grid>
                 <Grid item md={6}>
@@ -61,7 +62,7 @@ export default function Splash() {
                             About Me
                         </AccordionSummary>
                         <AccordionDetails className={classes.content}>
-                            I am a UW Certified Full Stack Web Developer. I bring an adaptive problem solving mindset to every project I contribute to and am of the "rising tides" mentality when it comes to working with others at every level of my career.
+                            I am a UW Certified Full Stack Web Developer. I bring an adaptive problem solving to every project I contribute to and am of the "rising tides" mentality when it comes to working with others at every level of my career.
                         </AccordionDetails>
                     </Accordion>
                 </Grid>
@@ -115,7 +116,7 @@ export default function Splash() {
                             History
                         </AccordionSummary>
                         <AccordionDetails className={classes.content}>
-                            I am a UW Certified Full Stack Web Developer. I bring an adaptive problem solving mindset to every project I contribute to and am of the "rising tides" mentality when it comes to working with others at every level of my career.
+                            I am a UW Certified Full Stack Web Developer. I bring my cognitive flexibility to every project I contribute to and am of the "rising tides" mentality when it comes to working with others at every level of my career.
                         </AccordionDetails>
                     </Accordion>
                 </Grid>
@@ -127,7 +128,37 @@ export default function Splash() {
                             id="panel1a-header"
                             className={classes.paper}
                         >
-                            Released Apps
+                            Certifications
+                        </AccordionSummary>
+                        <AccordionDetails className={classes.content}>
+                            <Grid container spacing={2} justify='space-evenly'>
+
+                                <Grid item style={{ margin: '1em' }}>
+
+                                    <CertCard
+                                        imgUrl="https://thumbs2.imgbox.com/8c/9c/cRDLK8DF_t.jpg"
+                                        imgAlt="UW Full Stack Web Developer"
+                                        title="UW Full Stack Web Developer"
+                                        description="An intensive 3 month coding Bootcamp covering Full Stack Web Development"
+
+                                    />
+                                </Grid>
+
+                            </Grid>
+
+                        </AccordionDetails>
+                    </Accordion>
+                </Grid>
+
+                <Grid item md={12}>
+                    <Accordion>
+                        <AccordionSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel1a-content"
+                            id="panel1a-header"
+                            className={classes.paper}
+                        >
+                            BootCamp Apps
                         </AccordionSummary>
                         <AccordionDetails className={classes.content}>
                             <Grid container spacing={2} justify='space-evenly'>
@@ -179,22 +210,6 @@ export default function Splash() {
                         </AccordionDetails>
                     </Accordion>
                 </Grid>
-                <Grid item md={12}>
-                    <Accordion>
-                        <AccordionSummary
-                            expandIcon={<ExpandMoreIcon />}
-                            aria-controls="panel1a-content"
-                            id="panel1a-header"
-                            className={classes.paper}
-                        >
-                            Certifications
-                        </AccordionSummary>
-                        <AccordionDetails className={classes.content}>
-                            I am a UW Certified Full Stack Web Developer. I bring an adaptive problem solving mindset to every project I contribute to and am of the "rising tides" mentality when it comes to working with others at every level of my career.
-                        </AccordionDetails>
-                    </Accordion>
-                </Grid>
-
             </Grid>
         </div>
     )
