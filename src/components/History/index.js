@@ -3,8 +3,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
-import IconButton from '@material-ui/core/IconButton';
-import AdjustIcon from '@material-ui/icons/Adjust';
+// import IconButton from '@material-ui/core/IconButton';
+// import AdjustIcon from '@material-ui/icons/Adjust';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -12,12 +12,12 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         flexWrap: 'wrap',
         justifyContent: 'space-around',
-        overflow: 'hidden',
+        overflow: 'show',
         backgroundColor: theme.palette.background.paper,
     },
     gridList: {
-        width: 500,
-        height: 450,
+        width: '75%',
+        height: '100%',
         // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
         transform: 'translateZ(0)',
     },

@@ -23,9 +23,25 @@ const useStyles = makeStyles((theme) => ({
             background: "#ffffd6",
         },
         fontFamily: 'Hammersmith One',
-        maxWidth: '100%'
+        maxWidth: '100%',
     },
 
+    footer: {
+        padding: theme.spacing(2),
+        textAlign: 'center',
+        color: theme.palette.text.primary,
+        background: "#FFFFF0",
+        '&:hover': {
+            background: "#ffffd6",
+        },
+        fontFamily: 'Playfair Display',
+        maxWidth: '100%',
+        marginTop: '2em'
+    },
+
+    accordian: {
+        maxWidth: '100%'
+    },
 
     content: {
         padding: 0,
@@ -54,13 +70,13 @@ export default function Splash() {
                 {/* Hook */}
                 <Grid item xs={12} className={classes.content}>
 
-                    Greetings! I am a newly minted Full Stack Web Developer based in Olympia,WA with a background in the Fine Wine industry and have strong cognitive flexibility.
+                    Greetings! I am a newly minted Full Stack Web Developer based in Olympia,WA with a background in the Fermentation Industry.
 
                 </Grid>
 
                 {/* About Me */}
                 <Grid item md={6}>
-                    <Accordion>
+                    <Accordion >
                         <AccordionSummary
                             expandIcon={<ExpandMoreIcon />}
                             aria-controls="panel1a-content"
@@ -83,7 +99,7 @@ export default function Splash() {
 
                 {/* Tech Stack */}
                 <Grid item md={6}>
-                    <Accordion>
+                    <Accordion >
                         <AccordionSummary
                             expandIcon={<ExpandMoreIcon />}
                             aria-controls="panel1a-content"
@@ -124,7 +140,8 @@ export default function Splash() {
 
                 {/* History */}
                 <Grid item md={6}>
-                    <Accordion>
+
+                    <Accordion >
                         <AccordionSummary
                             expandIcon={<ExpandMoreIcon />}
                             aria-controls="panel1a-content"
@@ -134,14 +151,21 @@ export default function Splash() {
                             History
                         </AccordionSummary>
                         <AccordionDetails className={classes.content}>
-                            <History />
+
+                            <Grid container>
+                                <Grid item s={8} className={classes.content}>
+                                    <History />
+                                </Grid>
+                            </Grid>
+
                         </AccordionDetails>
                     </Accordion>
+
                 </Grid>
 
                 {/* Certifications */}
                 <Grid item md={6}>
-                    <Accordion>
+                    <Accordion >
                         <AccordionSummary
                             expandIcon={<ExpandMoreIcon />}
                             aria-controls="panel1a-content"
@@ -159,7 +183,7 @@ export default function Splash() {
                                         imgUrl="https://thumbs2.imgbox.com/8c/9c/cRDLK8DF_t.jpg"
                                         imgAlt="UW Full Stack Web Developer"
                                         title="UW Full Stack Web Developer"
-                                        description="An intensive 3 month coding Bootcamp covering Full Stack Web Development"
+                                        description="An intensive 3 month coding Bootcamp covering Full Stack JavaScript Web Development up to React.js"
 
                                     />
                                 </Grid>
@@ -172,7 +196,7 @@ export default function Splash() {
 
                 {/* BootCamp Apps */}
                 <Grid item md={12}>
-                    <Accordion>
+                    <Accordion >
                         <AccordionSummary
                             expandIcon={<ExpandMoreIcon />}
                             aria-controls="panel1a-content"
@@ -235,7 +259,37 @@ export default function Splash() {
 
 
             {/* Footer */}
-            
+            <Grid container spacing={2} justify='space-evenly' className={classes.footer}>
+
+
+                <Grid item>
+                    <a href="https://github.com/DougJohnson22" target='_blank'>
+                        GitHub Repo
+                    </a>
+                </Grid>
+
+                <Grid item>
+                    <a href="https://drive.google.com/file/d/1HgupqYRbFuOzHMo55oEp_RzbLn68mrlA/view?usp=sharing" target='_blank'>
+                        Resume
+                    </a>
+                </Grid>
+
+                <Grid item>
+                    <a href="https://www.linkedin.com/in/douglas-johnson-942ba2200/" target='_blank'>
+                        LinkedIn
+                    </a>
+                </Grid>
+
+                <Grid item>
+                    <footer>
+                        Email:
+                        <a href="mailto: trunks22a@gmail.com" target='_blank'>
+                            trunks22a@gmail.com
+                        </a>
+                    </footer>
+                </Grid>
+            </Grid>
+
 
         </div>
     )
