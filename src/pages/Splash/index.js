@@ -263,14 +263,14 @@ export default function Splash() {
 
 
                 <Grid item>
-                    <a href="https://github.com/DougJohnson22" target='_blank'>
-                        GitHub Repo
+                    <a href="https://drive.google.com/file/d/1CUMKBvs8r4GCfurm4fNkZzGqxXWKYrui/view?usp=sharing" target='_blank'>
+                        Resume
                     </a>
                 </Grid>
 
                 <Grid item>
-                    <a href="https://drive.google.com/file/d/1HgupqYRbFuOzHMo55oEp_RzbLn68mrlA/view?usp=sharing" target='_blank'>
-                        Resume
+                    <a href="https://github.com/DougJohnson22" target='_blank'>
+                        GitHub Repo
                     </a>
                 </Grid>
 
