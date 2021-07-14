@@ -70,7 +70,7 @@ export default function Splash() {
                 {/* Hook */}
                 <Grid item xs={12} className={classes.content}>
 
-                    Greetings! I am a newly minted Full Stack Web Developer based in Olympia,WA with a background in the Fermentation Industry.
+                    Greetings! I am a newly minted Full Stack Web Developer based in Olympia,WA with a background in the Fine Wine Industry.
 
                 </Grid>
 
