@@ -5,9 +5,9 @@ import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
 import IconButton from '@material-ui/core/IconButton';
 import AdjustIcon from '@material-ui/icons/Adjust';
-import Modal from '@material-ui/core/Modal';
-import Backdrop from '@material-ui/core/Backdrop';
-import Fade from '@material-ui/core/Fade';
+// import Modal from '@material-ui/core/Modal';
+// import Backdrop from '@material-ui/core/Backdrop';
+// import Fade from '@material-ui/core/Fade';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -113,7 +113,7 @@ export default function HistoryGrid() {
                     </GridListTile>
                 ))}
 
-                <Modal
+                {/* <Modal
                     aria-labelledby="transition-modal-title"
                     aria-describedby="transition-modal-description"
                     className={classes.modal}
@@ -131,7 +131,7 @@ export default function HistoryGrid() {
                             <p id="transition-modal-description">react-transition-group animates me.</p>
                         </div>
                     </Fade>
-                </Modal>
+                </Modal> */}
             </GridList>
         </div>
     );

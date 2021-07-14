@@ -150,7 +150,7 @@ export default function Splash() {
                         <Grid container>
                             <AccordionDetails className={classes.content}>
                                 <Grid item md={6}>
-                                    I am a UW Certified Full Stack Web Developer. I bring an adaptive problem solving to every project I contribute to and am of the "rising tides" mentality when it comes to working with others at every level of my career.
+                                    I am a UW Certified Full Stack Web Developer. I bring adaptive problem solving to every project I contribute to and am of the "rising tides" mentality when it comes to working with others at every level of my career.
                                     <img src='https://thumbs2.imgbox.com/0f/48/DIV2rXL9_t.png'></img>
                                 </Grid>
 
@@ -256,7 +256,7 @@ export default function Splash() {
                     </Accordion>
                 </Grid>
 
- 
+
             </Grid>
 
 
