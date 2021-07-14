@@ -64,7 +64,7 @@ export default function Splash() {
 
                 {/* Banner */}
                 <Grid item xs={12}>
-                    <img className={classes.content} src="https://images2.imgbox.com/48/fa/2EsnyXw7_o.png" alt="Douglas Johnson banner" />
+                    <img className={classes.content} src="https://images2.imgbox.com/18/b7/dDPfYUSZ_o.png" alt="Douglas Johnson banner" />
                 </Grid>
 
                 {/* Hook */}
