@@ -265,7 +265,7 @@ export default function Splash() {
 
 
                 <Grid item>
-                    <a href="https://drive.google.com/file/d/1CUMKBvs8r4GCfurm4fNkZzGqxXWKYrui/view?usp=sharing" target='_blank'>
+                    <a href="https://docs.google.com/document/d/1c3LMEZOkw196tB-1gye26ec0jf5af06W87BPz9uNOSg/edit?usp=sharing" target='_blank'>
                         Resume
                     </a>
                 </Grid>
@@ -285,8 +285,8 @@ export default function Splash() {
                 <Grid item>
                     <footer>
                         Email:
-                        <a href="mailto: trunks22a@gmail.com" target='_blank'>
-                            trunks22a@gmail.com
+                        <a href="mailto: doug@gofordoug.com" target='_blank'>
+                            doug@gofordoug.com
                         </a>
                     </footer>
                 </Grid>
